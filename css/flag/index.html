@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Escriu aquí el teu codi CSS */
+    .flag{
+      position: absolute;
+      width: 900px;
+      height: 600px;
+      background-color: rgb(202, 26, 26);
+      color: white;
+    }
+    .Center{
+      position: relative;
+      bottom: 25px;
+      width: 900px;
+      height: 300px;
+      background-color: rgb(10, 57, 99);
+    }
+    .Cercle{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      left: 350px;
+      bottom: 50px;
+      background-color: aliceblue;
+      border-radius: 50%;
+      color: black;
+    }
+
+    .p1{
+      font-size: 80px;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .p2{
+      font-size: 80px;
+      text-align: center;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT!
+Del Codi CSS només es poden afegir classes o IDs
+Indicació  1: La bandera fa 900px per 600px i el cercle és 200px per 200px.
+Inidcació 2: per aconseguir el cercle, utiitza un <div> i aplica la propietat border-radius. Prova amb difernets valors fins aconseguir el cercle.
+-->
+
+<body>
+  <div class="flag">
+    <p class="p1">The Flag</p>
+    <div class="Center">
+      <div class="Cercle">
+        <p class="p2">of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

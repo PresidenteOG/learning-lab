@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+        <!--
+            No modifiquis el codi existent
+            TASQUES A FER:
+            - Aplica la propietat CSS width als quatre elements paràgrafs per separat.
+                al primer paràgraf un  30%
+                al segon paràgraf un 60%
+                al tercer paràgraf 220px
+                al quart paràgraf 430 px
+
+            Observa què passa quan la pàgina web es veu des d'un navegador i la finestra del navegafor la fas mes i mes estreta.          
+            
+        -->
+
+<head>
+    <title> Unitats CSS Relatives i Absolutes</title>
+    <style>
+        div{
+            display: flex;
+        }
+        body {
+            font-size:20px;
+        }
+        p {
+            display:inline-block;
+            background-color:green;
+            color:white;
+            padding:20px,0px,20px,0px;
+        }
+
+        .infoRelative {
+            width: 30%;
+        }
+
+        .infoDetailRelative {
+            width: 60%;
+        }
+
+        .infoAbsolute {
+            width: 220px;
+        }
+
+        .infoDetailAbsolute {
+            width: 430px;
+        }
+    </style>
+</head>
+<body>
+
+    <div >
+        <p class="infoRelative">1) Name :</p>
+        <p class="infoDetailRelative"> Brain McCarthy</p>
+    </div>
+    <div>
+        <p class="infoAbsolute">2) Name :</p>
+        <p class="infoDetailAbsolute"> Eric Wood</p>
+
+    </div>
+</body>
+</html>

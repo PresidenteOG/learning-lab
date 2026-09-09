@@ -1,0 +1,55 @@
+<!-- 
+  TASQUES: Crea una website que contingui un "meme" amb una imatge, un titular i un comentari sobre el titular.
+Dona-li l'estil que vulguis en el format EXTERNAL
+Mira la imatge objectiu per orientar-te
+Però ha de tenir les següents característiques:
+1. El text h1 text ha de ser amb el tipus de font Regular Libre Baskerville Font de Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+
+2. El text ha de ser d'un color clar i el fons d'un altre color fosc
+
+3. Afegeix la imatge que triis dins de la carpeta assets/images. Aquesta imatge ha de tenir un border blanc de 5 px.
+4. El text he de ser alineat al centre.
+
+5. Crea un contenidor div que contingui els elements h1, p i img. Ajusta els marges perquè la imatge i el text estiguin centrats a la pàgina. 
+  Pista: Pots centrar un contenidor dic horitzontalment donant-li un width del 50% i un margin-left del 25%.
+  Pista: Configura la imatge perquè tingui un width del 100% perquè empleni tot el contenidor div. 
+6. LLegeix sobre la propietat text-transform a MDN docs per fer l'element h1 amb majúscules amb CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: black;
+      color: white;
+    }
+    h1{
+      font-family: 'Libre Baskerville', serif;
+      text-transform: uppercase;
+    }
+    .div1{
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 100px;
+    }
+    img{
+      width: 100%;
+      border: 5px solid;
+      border-color: white;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="div1">
+    <img src="./assets/images/market.jpg" alt="Imatge del mercat" height="250" width="400">
+    <h1 style="text-align: center;">Buscas un rating de 5 en higiene</h1>
+    <p style="text-align: center;">Encuentras proteina extra</p>
+  </div>
+</body>
+</html>

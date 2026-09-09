@@ -1,0 +1,11 @@
+# build output
+target/
+out/
+bin/
+*.class
+__pycache__/
+*.py[cod]
+# IDE
+.idea/
+.vscode/
+*.iml

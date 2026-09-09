@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Canvia el color de fons i el tamany de la lletra per cada mida de dispositiu
+[color de fons: lightsalmon i Tamany de la lletra: 2rem] Mobile Devices: 319px — 480px
+[color de fons:powderblue i Tamany de la lletra: 4rem] iPads and Tablets: 481px — 1200px
+[color de fons:limegreen i Tamany de la lletra: 6rem] Laptops: 1201px — 1600px
+[color de fons:seagreen i Tamany de la lletra: 8rem] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    body {
+      background-color: aquamarine;
+      font-size: 2rem;
+    }
+
+    /*móviles */
+    @media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+        font-size: 2rem;
+      }
+    }
+
+    /*iPads y Tablets */
+    @media (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+        font-size: 4rem;
+      }
+    }
+
+    /*Portatil */
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+        font-size: 6rem;
+      }
+    }
+
+    /*Ordenador */
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+        font-size: 8rem;
+      }
+    }
+  </style>
+
+
+
+  </style>
+</head>
+
+<body>
+  <p>Lorem Ipsum</p>
+</body>
+
+</html>
