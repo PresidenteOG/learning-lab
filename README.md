@@ -52,6 +52,16 @@ handed out are removed — only my HTML and CSS is here.
 | `cascade/` | Specificity and inheritance. |
 | `postal-card/` | A postcard layout putting the box model and positioning together. |
 
+A few of them, opened in a browser:
+
+![The flag exercise — flag of Laos drawn with CSS, no images](docs/screenshots/flag.png) | ![The box-model exercise — three boxes showing margin, padding and border](docs/screenshots/box-model.png)
+:---:|:---:
+`flag/` | `box-model/`
+
+![The display exercise — three inline-block coloured blocks](docs/screenshots/display.png) | ![The float exercise — two text columns floated side by side](docs/screenshots/float.png)
+:---:|:---:
+`display/` | `float/`
+
 ### bash/
 
 An MQTT chat built out of shell scripts: `chat_client.sh` wraps
