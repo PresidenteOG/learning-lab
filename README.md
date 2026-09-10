@@ -21,6 +21,10 @@ or duplicated another exercise, was dropped.
 | `fibonacci/` | Fibonacci as a string builder. Iteration, `StringBuilder`, off-by-one care. |
 | `oop-basics/` | First object-oriented exercises: a class with a documented method, a `main` that drives it. |
 
+![Connect Four mid-game against the AI — red is the player, blue is the minimax opponent, the side panel tracks the clock and whose turn it is](docs/screenshots/connect-four.png)
+
+A game in progress in `java/connect-four`.
+
 ### python/
 
 | Folder | What it practices |
@@ -58,9 +62,9 @@ A few of them, opened in a browser:
 :---:|:---:
 `flag/` | `box-model/`
 
-![The display exercise — three inline-block coloured blocks](docs/screenshots/display.png) | ![The float exercise — two text columns floated side by side](docs/screenshots/float.png)
+![The display exercise — three inline-block coloured blocks](docs/screenshots/display.png) | ![The position exercise — a red circle absolutely positioned to the bottom-right of a blue box, overflowing it](docs/screenshots/position.png)
 :---:|:---:
-`display/` | `float/`
+`display/` | `position/`
 
 ### bash/
 
@@ -79,7 +83,8 @@ database user. Plain notes, kept as Markdown.
 
 - **Java single files:** `javac File.java && java File` (JDK 17+). `connect-four`
   needs Maven and pulls Processing 4 and JOGL from Maven Central: `cd
-  java/connect-four && ./mvnw compile`.
+  java/connect-four && ./mvnw compile`, then run it with
+  `./mvnw exec:java -Dexec.mainClass=com.example.connectfour.Main`.
 - **Python:** `python file.py`. The `basics/` scripts that import `llibreria`
   expect it in the same folder, which it is.
 - **JavaScript:** these use browser `prompt`, so run them in the browser console
